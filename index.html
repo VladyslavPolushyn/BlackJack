@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper grid">
+        <div class="game-field grid">
+            <div class="dealer-field flex">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+
+            <div class="common-field"></div>
+
+            <div class="player-field flex">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+            
+            <div class="game-menu grid">
+                <div class="menu-buttons grid">
+                    <button class="no-display" id="hit_me_btn">Hit me</button>
+                    <button class="no-display" id="stop_btn">Stop</button>
+                    <button class="" id="make_bet_btn">Make the bet</button>
+                </div>
+                <div class="menu-info grid">
+                    <p>
+                        Money: $<span id="current_money">1000</span>
+                    </p>
+                    <p>
+                        Score: <span id="current_score"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    min-height: 100vh;
+    padding: 15px;
+    background: linear-gradient(#090909, #353535);
+    color: #fff;
+    font-family: Verdana, sans-serif;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.no-display {
+    display: none;
+}
+
+.wrapper {
+    max-width: 1200px;
+    height: 90vh;
+    margin: 0 auto;
+    padding: 15px;
+    align-items: center;
+}
+
+.game-field {
+    border: 20px solid #012C1A;
+    border-radius: 40px;
+    background-color: #064701;
+}
+
+.game-field {
+    grid-template-rows: 3fr 1fr 3fr 1fr;
+}
+
+.player-field, .dealer-field, .common-field {
+    padding: 15px;
+    position: relative;
+    max-width: 100%;
+}
+
+.player-field, .dealer-field {
+    justify-content: space-between;
+}
+
+.card {
+    position: absolute;
+    width: 113px;
+    height: 170px;
+    background-position: center;
+    background-size: cover;
+}
+
+.game-menu {
+    background-color: #012C1A;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.common-field {
+
+}
+
+.menu-buttons {
+    grid-template-columns: repeat(3, 1fr);
+    align-content: space-between;
+    padding: 15px;
+    grid-gap: 15px;
+}
+
+.menu-buttons button {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: none;
+    transition: .2s;
+    box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#hit_me_btn, #make_bet_btn {
+    background-color: #0C9100;
+}
+
+#hit_me_btn:hover, #make_bet_btn:hover {
+    background-color: #0A7D00;
+}
+
+#stop_btn {
+    background-color: #CA0300;
+}
+
+#stop_btn:hover {
+    background-color: #B80300;
+}
+
+#hit_me_btn:active, #make_bet_btn:active, #stop_btn:active {
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+.menu-info {
+    padding: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: space-around;
+    grid-gap: 15px;
+}
+
+.menu-info p {
+    background-color: #143F2D;
+    padding: 15px;
+}
+
+/* .card {
+    background-image: url("img/cards/JC.png");
+} */
